@@ -61,32 +61,18 @@
 &lt;/li&gt;
 &lt;li&gt;
 &lt;p&gt;&lt;code&gt;math&lt;/code&gt;: 是否使用KaTex来渲染数学公式&lt;/p&gt;
-&lt;/li&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
+&lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;span class=&#34;lnt&#34;&gt;1
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;2
+&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
+&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-fallback&#34; data-lang=&#34;fallback&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;行内公式： $ …… $
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;行间公式： $$ …… $$
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
+&lt;/div&gt;
+&lt;/div&gt;&lt;/li&gt;
 &lt;/ul&gt;
-&lt;p&gt;&lt;strong&gt;全局开启KaTex渲染的方法：&lt;/strong&gt;&lt;/p&gt;
-&lt;pre&gt;&lt;code&gt;1. 创建`/layouts/partials/math.html`文件，这个文件需要包含KaTex渲染所需的CSS和JavaScript.
-
-```
-&amp;lt;!-- /layouts/partials/math.html --&amp;gt;
-&amp;lt;link rel=&amp;quot;stylesheet&amp;quot; href=&amp;quot;https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css&amp;quot; integrity=&amp;quot;sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI+WdtXRGWt2kTvGFasHpSy3SV&amp;quot; crossorigin=&amp;quot;anonymous&amp;quot;&amp;gt;
-&amp;lt;script defer src=&amp;quot;https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js&amp;quot; integrity=&amp;quot;sha384-XjKyOOlGwcjNTAIQHIpgOno0Hl1YQqzUOEleOLALmuqehneUG+vnGctmUb0ZY0l8&amp;quot; crossorigin=&amp;quot;anonymous&amp;quot;&amp;gt;&amp;lt;/script&amp;gt;
-&amp;lt;script defer src=&amp;quot;https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js&amp;quot; integrity=&amp;quot;sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05&amp;quot; crossorigin=&amp;quot;anonymous&amp;quot; onload=&amp;quot;renderMathInElement(document.body);&amp;quot;&amp;gt;&amp;lt;/script&amp;gt;
-```
-
-2. 在`/archetypes/default.md`中添加
-```
-{{ if or .Params.math .Site.Params.math }}
-{{ partial &amp;quot;math.html&amp;quot; . }}
-{{ end }}
-```
-
-3. 在hugo.yaml中，将math修改为true(如果已经设置全局为true，每篇文章就无需单独设置)
-
-```
-行内公式： $ …… $
-行间公式： $$ …… $$
-```
-&lt;/code&gt;&lt;/pre&gt;
 &lt;p&gt;行内公式展示: $ y=Hx $&lt;/p&gt;
 &lt;p&gt;行间公式展示：&lt;/p&gt;
 $$ y=Hx $$&lt;ul&gt;

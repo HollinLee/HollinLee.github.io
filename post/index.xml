@@ -7,7 +7,94 @@
         <generator>Hugo -- gohugo.io</generator>
         <language>zh-cn</language>
         <copyright>HollinLee</copyright>
-        <lastBuildDate>Sun, 12 Jan 2025 19:15:50 +0800</lastBuildDate><atom:link href="https://HollinLee.github.io/post/index.xml" rel="self" type="application/rss+xml" /><item>
+        <lastBuildDate>Sun, 12 Jan 2025 21:53:48 +0800</lastBuildDate><atom:link href="https://HollinLee.github.io/post/index.xml" rel="self" type="application/rss+xml" /><item>
+        <title>个人windows配置</title>
+        <link>https://HollinLee.github.io/p/%E4%B8%AA%E4%BA%BAwindows%E9%85%8D%E7%BD%AE/</link>
+        <pubDate>Sun, 12 Jan 2025 21:53:48 +0800</pubDate>
+        
+        <guid>https://HollinLee.github.io/p/%E4%B8%AA%E4%BA%BAwindows%E9%85%8D%E7%BD%AE/</guid>
+        <description>&lt;p&gt;我有很多配置follow了&lt;a class=&#34;link&#34; href=&#34;https://kirigaya.cn/blog/article?seq=28&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;https://kirigaya.cn/blog/article?seq=28&lt;/a&gt;.&lt;/p&gt;
+&lt;h1 id=&#34;下载应用软件&#34;&gt;下载应用软件
+&lt;/h1&gt;&lt;p&gt;Chrome浏览器、微信（和企业微信）、Matlab、vscode、zotero、texlive&lt;/p&gt;
+&lt;h1 id=&#34;windows设置&#34;&gt;Windows设置
+&lt;/h1&gt;&lt;h2 id=&#34;win11恢复旧版菜单&#34;&gt;Win11恢复旧版菜单
+&lt;/h2&gt;&lt;p&gt;followed by: &lt;a class=&#34;link&#34; href=&#34;https://www.cnblogs.com/chaichengxun/p/18034159&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;https://www.cnblogs.com/chaichengxun/p/18034159&lt;/a&gt;&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;打开Terminal，输入&lt;/li&gt;
+&lt;/ol&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
+&lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;span class=&#34;lnt&#34;&gt;1
+&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
+&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-fallback&#34; data-lang=&#34;fallback&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;reg.exe add &amp;#34;HKCU\Software\Classes\CLSID\{86ca1aa0-34aa-4e8b-a509-50c905bae2a2}\InprocServer32&amp;#34; /f /ve
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
+&lt;/div&gt;
+&lt;/div&gt;&lt;ol start=&#34;2&#34;&gt;
+&lt;li&gt;打开任务管理器，重启&lt;code&gt;explorer.exe&lt;/code&gt;&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h2 id=&#34;小鹤双拼输入法&#34;&gt;小鹤双拼输入法
+&lt;/h2&gt;&lt;p&gt;followed by: &lt;a class=&#34;link&#34; href=&#34;https://www.bilibili.com/opus/942918129513660489?spm_id_from=333.1387.0.0&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;https://www.bilibili.com/opus/942918129513660489?spm_id_from=333.1387.0.0&lt;/a&gt;&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;打开Terminal，输入&lt;/li&gt;
+&lt;/ol&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
+&lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;span class=&#34;lnt&#34;&gt;1
+&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
+&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-fallback&#34; data-lang=&#34;fallback&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;reg add HKCU\Software\Microsoft\InputMethod\Settings\CHS /v UserDefinedDoublePinyinScheme0 /t REG_SZ /d &amp;#34;小鹤双拼*2*^*iuvdjhcwfg^xmlnpbksqszxkrltvyovt&amp;#34;
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
+&lt;/div&gt;
+&lt;/div&gt;&lt;ol start=&#34;2&#34;&gt;
+&lt;li&gt;win+i 打开 Settings, 搜索pinyin，选择Microsoft Pinyin-&amp;gt;General将Pinyin Style改成Double pinyin，并在Double pinyin scheme中将小鹤双拼设为默认。&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h2 id=&#34;显示此电脑图标&#34;&gt;显示此电脑图标
+&lt;/h2&gt;&lt;p&gt;win+i打开Settings-&amp;gt;Personalization-&amp;gt;Themes-&amp;gt;Desktop icon settings，在Desktop Icons里面勾选Computer。&lt;/p&gt;
+&lt;h1 id=&#34;zotero&#34;&gt;Zotero
+&lt;/h1&gt;&lt;ol&gt;
+&lt;li&gt;
+&lt;p&gt;在&lt;a class=&#34;link&#34; href=&#34;https://www.zotero.org/download/&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;Zotero官网&lt;/a&gt;下载Zotero 7安装。&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;在&lt;a class=&#34;link&#34; href=&#34;https://zotero-chinese.com/&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;Zotero中文社区&lt;/a&gt;下载插件&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;Better BibTex for Zotero&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Ethereal Style&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Jasminum&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Sci-PDF&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Translate for Zotero&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;打开&lt;a class=&#34;link&#34; href=&#34;https://www.easyscholar.cc/&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;easyscholar&lt;/a&gt;，右上角进入我的信息，找到开放接口，将SecretKey复制。&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Zotero找到Edit-&amp;gt;Settings-&amp;gt;Advanced-&amp;gt;Config Editor，搜索secretKey，将easyscholar上复制的结果粘贴上去。&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Ethereal Style 在论文列表中选择展示Title、Creator、Date、Publication、Citation Key、Publication Tags、IF。&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+</description>
+        </item>
+        <item>
         <title>Hugo使用指南(Stack Theme)</title>
         <link>https://HollinLee.github.io/p/hugo%E4%BD%BF%E7%94%A8%E6%8C%87%E5%8D%97stack-theme/</link>
         <pubDate>Sun, 12 Jan 2025 19:15:50 +0800</pubDate>
@@ -61,32 +148,18 @@
 &lt;/li&gt;
 &lt;li&gt;
 &lt;p&gt;&lt;code&gt;math&lt;/code&gt;: 是否使用KaTex来渲染数学公式&lt;/p&gt;
-&lt;/li&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
+&lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;span class=&#34;lnt&#34;&gt;1
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;2
+&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
+&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-fallback&#34; data-lang=&#34;fallback&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;行内公式： $ …… $
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;行间公式： $$ …… $$
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
+&lt;/div&gt;
+&lt;/div&gt;&lt;/li&gt;
 &lt;/ul&gt;
-&lt;p&gt;&lt;strong&gt;全局开启KaTex渲染的方法：&lt;/strong&gt;&lt;/p&gt;
-&lt;pre&gt;&lt;code&gt;1. 创建`/layouts/partials/math.html`文件，这个文件需要包含KaTex渲染所需的CSS和JavaScript.
-
-```
-&amp;lt;!-- /layouts/partials/math.html --&amp;gt;
-&amp;lt;link rel=&amp;quot;stylesheet&amp;quot; href=&amp;quot;https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css&amp;quot; integrity=&amp;quot;sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI+WdtXRGWt2kTvGFasHpSy3SV&amp;quot; crossorigin=&amp;quot;anonymous&amp;quot;&amp;gt;
-&amp;lt;script defer src=&amp;quot;https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js&amp;quot; integrity=&amp;quot;sha384-XjKyOOlGwcjNTAIQHIpgOno0Hl1YQqzUOEleOLALmuqehneUG+vnGctmUb0ZY0l8&amp;quot; crossorigin=&amp;quot;anonymous&amp;quot;&amp;gt;&amp;lt;/script&amp;gt;
-&amp;lt;script defer src=&amp;quot;https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js&amp;quot; integrity=&amp;quot;sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05&amp;quot; crossorigin=&amp;quot;anonymous&amp;quot; onload=&amp;quot;renderMathInElement(document.body);&amp;quot;&amp;gt;&amp;lt;/script&amp;gt;
-```
-
-2. 在`/archetypes/default.md`中添加
-```
-{{ if or .Params.math .Site.Params.math }}
-{{ partial &amp;quot;math.html&amp;quot; . }}
-{{ end }}
-```
-
-3. 在hugo.yaml中，将math修改为true(如果已经设置全局为true，每篇文章就无需单独设置)
-
-```
-行内公式： $ …… $
-行间公式： $$ …… $$
-```
-&lt;/code&gt;&lt;/pre&gt;
 &lt;p&gt;行内公式展示: $ y=Hx $&lt;/p&gt;
 &lt;p&gt;行间公式展示：&lt;/p&gt;
 $$ y=Hx $$&lt;ul&gt;
